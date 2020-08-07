@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/alissa33/static/css/main.266173d9.chunk.css",
-    "main.js": "/alissa33/static/js/main.0c1c6971.chunk.js",
-    "main.js.map": "/alissa33/static/js/main.0c1c6971.chunk.js.map",
+    "main.js": "/alissa33/static/js/main.663a2303.chunk.js",
+    "main.js.map": "/alissa33/static/js/main.663a2303.chunk.js.map",
     "runtime-main.js": "/alissa33/static/js/runtime-main.959d418f.js",
     "runtime-main.js.map": "/alissa33/static/js/runtime-main.959d418f.js.map",
     "static/js/2.d6680e24.chunk.js": "/alissa33/static/js/2.d6680e24.chunk.js",
     "static/js/2.d6680e24.chunk.js.map": "/alissa33/static/js/2.d6680e24.chunk.js.map",
     "index.html": "/alissa33/index.html",
-    "precache-manifest.ed5844512e9e28120b654dfabae5052a.js": "/alissa33/precache-manifest.ed5844512e9e28120b654dfabae5052a.js",
+    "precache-manifest.064f6d2658aae2a76ef4233630877ca2.js": "/alissa33/precache-manifest.064f6d2658aae2a76ef4233630877ca2.js",
     "service-worker.js": "/alissa33/service-worker.js",
     "static/css/main.266173d9.chunk.css.map": "/alissa33/static/css/main.266173d9.chunk.css.map",
     "static/js/2.d6680e24.chunk.js.LICENSE.txt": "/alissa33/static/js/2.d6680e24.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.959d418f.js",
     "static/js/2.d6680e24.chunk.js",
     "static/css/main.266173d9.chunk.css",
-    "static/js/main.0c1c6971.chunk.js"
+    "static/js/main.663a2303.chunk.js"
   ]
 }
