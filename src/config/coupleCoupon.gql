@@ -1,0 +1,8 @@
+type CoupleCoupon {
+  id: ID!
+  title: String
+  description: String
+  expires: Date
+  alreadyUsed: Boolean
+  imgUrl: String
+}
