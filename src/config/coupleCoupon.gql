@@ -6,3 +6,8 @@ type CoupleCoupon {
   alreadyUsed: Boolean
   imgUrl: String
 }
+
+type Query {
+   allCoupons: [CoupleCoupon!]
+   couponsByUsed(alreadyUsed: Boolean!): [CoupleCoupon!]
+}

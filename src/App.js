@@ -1,30 +1,37 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap'
 
-import logo from './logo.svg';
 import './App.css';
 import { getAll } from './api';
-import {CouponContainer} from './coupons/coupons-container';
+import { CouponContainer } from './coupons/coupons-container';
 
 function App() {
 
-  const fetchCoupons = () => {
-		getAll().then((res) => {
-			console.log({res})
-		});
-	};
+  const [coupons, setCoupons] = useState([])
 
-	useEffect(() => {
-		fetchCoupons();
+  const fetchCoupons = () => {
+    getAll().then((res) => {
+      console.log({ res })
+      setCoupons(res)
+    });
+  };
+
+  useEffect(() => {
+    fetchCoupons();
   }, []);
-  
-	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<CouponContainer />
-			</header>
-		</div>
-	);
+
+  return (
+    <Container fluid className="root">
+      <Row>
+        <Col>
+          <h1>
+            Alissa's 33 Coupons
+          </h1>
+        </Col>
+      </Row>
+      <CouponContainer coupons={coupons} />
+    </Container>
+  );
 }
 
 export default App;
