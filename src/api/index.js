@@ -13,4 +13,18 @@ export const getAll = () =>
 		})
 		.catch((error) => console.error('Error: ', error.message));
 
+export const redeemCoupon = couponId => {
+	return client.query(
+		q.Update(
+		  q.Ref(q.Collection('CoupleCoupon'), couponId),
+		  {
+			data: {
+			  alreadyUsed: true
+			},
+		  },
+		)
+	  )
+	  .then((ret) => {return ret})
+}
+
 

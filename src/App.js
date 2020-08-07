@@ -7,19 +7,6 @@ import { CouponContainer } from './coupons/coupons-container';
 
 function App() {
 
-  const [coupons, setCoupons] = useState([])
-
-  const fetchCoupons = () => {
-    getAll().then((res) => {
-      console.log({ res })
-      setCoupons(res)
-    });
-  };
-
-  useEffect(() => {
-    fetchCoupons();
-  }, []);
-
   return (
     <Container fluid className="root">
       <Row>
@@ -29,7 +16,7 @@ function App() {
           </h1>
         </Col>
       </Row>
-      <CouponContainer coupons={coupons} />
+      <CouponContainer />
     </Container>
   );
 }
