@@ -9,7 +9,7 @@ function App() {
 
   const fetchCoupons = () => {
 		getAll().then((res) => {
-			
+			console.log({res})
 		});
 	};
 
