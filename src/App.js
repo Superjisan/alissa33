@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
 
 import './App.css';
-import { getAll } from './api';
 import { CouponContainer } from './coupons/coupons-container';
 
 function App() {
