@@ -19,7 +19,7 @@ export const CouponContainer = props => {
   };
 
   const onFilterChange = filterName => {
-    if(filterName === filter) {
+    if (filterName === filter) {
       setFilter('')
     } else {
       setFilter(filterName)
@@ -30,7 +30,7 @@ export const CouponContainer = props => {
     fetchCoupons();
   }, []);
 
-  
+
   return (
     <>
       <Row>
@@ -60,7 +60,7 @@ export const CouponContainer = props => {
       )
       }
     </>
-  
 
+  )
 
 }
